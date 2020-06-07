@@ -1,0 +1,37 @@
+.massiveHeader{
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index:100;
+    transition: .4s;
+    .navbar{
+        transition: .4s;
+        .navbar-collapse {
+            justify-content: flex-end;
+            .active{
+                .nav-link{
+                    @include styleText($color-yellow-0,$fs-1);
+                }
+            }
+            .nav-link{
+                letter-spacing: .5px;
+                padding: 0 13px;
+                @include styleText($color-black-1,$fs-1);
+                &:hover{
+                    @include styleText($color-yellow-0,$fs-1);
+                }
+                &:focus{
+                    @include styleText($color-yellow-0,$fs-1);
+                }   
+            }
+        }
+        .navbar-brand{
+            padding:0;
+            img{
+                transition: .4s;
+            }
+        }
+    }
+   
+}
+
